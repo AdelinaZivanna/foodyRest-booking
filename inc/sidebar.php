@@ -41,10 +41,30 @@
             </li>
 
             <!-- Nav Item - Tables -->
-            <li class="nav-item">
+            <!-- <li class="nav-item">
                 <a class="nav-link" href="form_add.php">
                     <i class="fas fa-fw fa-list"></i>
                     <span>Form Add</span></a>
+            </li> -->
+
+            <!-- Nav Item - Tables -->
+            <li class="nav-item">
+            <a class="nav-link" href="groups.php">
+            <i class="fas fa-fw fa-box"></i>
+            <span>Groups</span></a>
+            </li>
+
+            <!-- Nav Item - Tables -->
+            <li class="nav-item">
+            <a class="nav-link" href="users.php">
+            <i class="fas fa-fw fa-user"></i>
+            <span>Users</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="logout.php">
+                    <i class="fas fa-fw fa-trash"></i>
+                    <span>Logout</span></a>
             </li>
 
             <!-- Divider -->
