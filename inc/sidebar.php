@@ -1,79 +1,65 @@
-        <!-- Sidebar -->
-        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
-            <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-                <div class="sidebar-brand-icon rotate-n-15">
-                    <i class="fas fa-laugh-wink"></i>
-                </div>
-                <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
-            </a>
+    <!-- Brand -->
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.php">
+        <div class="sidebar-brand-text mx-3">FoodyRest Admin</div>
+    </a>
 
-            <!-- Divider -->
-            <hr class="sidebar-divider my-0">
+    <hr class="sidebar-divider my-0">
 
-            <!-- Nav Item - Dashboard -->
-            <li class="nav-item">
-                <a class="nav-link" href="index.php">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Dashboard</span></a>
-            </li>
+    <!-- Dashboard -->
+    <li class="nav-item <?php if ($page == 'index.php') echo 'active'; ?>">
+        <a class="nav-link" href="index.php">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>Dashboard</span>
+        </a>
+    </li>
 
-            <!-- Nav Item - Tables -->
-            <li class="nav-item active">
-                <a class="nav-link" href="tables.php">
-                    <i class="fas fa-fw fa-table"></i>
-                    <span>Tables</span></a>
-            </li>
+    <!-- Reservations -->
+    <li class="nav-item <?php if ($page == 'reservasi.php') echo 'active'; ?>">
+        <a class="nav-link" href="reservasi.php">
+            <i class="fas fa-fw fa-calendar-check"></i>
+            <span>Reservations</span>
+        </a>
+    </li>
 
-            <!-- Nav Item - Tables -->
-            <li class="nav-item">
-                <a class="nav-link" href="blank.php">
-                    <i class="fas fa-fw fa-file"></i>
-                    <span>Blank Page</span></a>
-            </li>
+    <li class="nav-item <?php if ($page == 'meja.php') echo 'active'; ?>">
+        <a class="nav-link" href="meja.php">
+            <i class="fas fa-fw fa-chair"></i>
+            <span>Kelola Meja</span>
+        </a>
+    </li>
 
-            <!-- Nav Item - Tables -->
-            <li class="nav-item">
-                <a class="nav-link" href="404.php">
-                    <i class="fas fa-fw fa-file"></i>
-                    <span>404</span></a>
-            </li>
+    <!-- Menu -->
+    <li class="nav-item <?php if ($page == 'menu.php') echo 'active'; ?>">
+        <a class="nav-link" href="menu.php">
+            <i class="fas fa-fw fa-utensils"></i>
+            <span>Menu</span>
+        </a>
+    </li>
 
-            <!-- Nav Item - Tables -->
-            <!-- <li class="nav-item">
-                <a class="nav-link" href="form_add.php">
-                    <i class="fas fa-fw fa-list"></i>
-                    <span>Form Add</span></a>
-            </li> -->
+    <!-- Payments -->
+    <li class="nav-item <?php if ($page == 'pembayaran.php') echo 'active'; ?>">
+        <a class="nav-link" href="pembayaran.php">
+            <i class="fas fa-fw fa-credit-card"></i>
+            <span>Payments</span>
+        </a>
+    </li>
 
-            <!-- Nav Item - Tables -->
-            <li class="nav-item">
-            <a class="nav-link" href="groups.php">
-            <i class="fas fa-fw fa-box"></i>
-            <span>Groups</span></a>
-            </li>
-
-            <!-- Nav Item - Tables -->
-            <li class="nav-item">
-            <a class="nav-link" href="users.php">
+    <!-- Users -->
+    <li class="nav-item <?php if ($page == 'users.php') echo 'active'; ?>">
+        <a class="nav-link" href="users.php">
             <i class="fas fa-fw fa-user"></i>
-            <span>Users</span></a>
-            </li>
+            <span>Users</span>
+        </a>
+    </li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="logout.php">
-                    <i class="fas fa-fw fa-trash"></i>
-                    <span>Logout</span></a>
-            </li>
+    <!-- Logout -->
+    <li class="nav-item <?php if ($page == 'logout.php') echo 'active'; ?>">
+        <a class="nav-link" href="logout.php">
+            <i class="fas fa-fw fa-sign-out-alt"></i>
+            <span>Logout</span>
+        </a>
+    </li>
 
-            <!-- Divider -->
-            <hr class="sidebar-divider d-none d-md-block">
-
-            <!-- Sidebar Toggler (Sidebar) -->
-            <div class="text-center d-none d-md-inline">
-                <button class="rounded-circle border-0" id="sidebarToggle"></button>
-            </div>
-
-        </ul>
-        <!-- End of Sidebar -->
+</ul>
