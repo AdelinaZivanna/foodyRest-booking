@@ -68,6 +68,42 @@ function selesaikanReservasi($db, $id_res) {
     return $stmt2->execute([$meja_id]);
 }
 
+function tambahMetodePembayaran($db, $nama, $keterangan) {
+    $stmt = $db->prepare("
+        INSERT INTO metode_pembayaran (nama_metode, keterangan, status)
+        VALUES (?, ?, 'aktif')
+    ");
+    return $stmt->execute([$nama, $keterangan]);
+}
+
+function updateMetodePembayaran($db, $id, $nama, $keterangan, $status) {
+    $stmt = $db->prepare("
+        UPDATE metode_pembayaran
+        SET nama_metode = ?, keterangan = ?, status = ?
+        WHERE id = ?
+    ");
+    return $stmt->execute([$nama, $keterangan, $status, $id]);
+}
+
+function getMotodeById($db, $id) {
+    $stmt = $db->prepare("SELECT * FROM metode_pembayaran WHERE id = ?");
+    $stmt->execute([$id]);
+    return $stmt->fetch(PDO::FETCH_ASSOC);
+
+
+}
+function getAllMetode($db) {
+    $stmt = $db->query("SELECT * FROM metode_pembayaran ORDER BY id DESC");
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}
+
+function deleteMetodePembayaran($db, $id) {
+    $stmt = $db->prepare("DELETE FROM metode_pembayaran WHERE id = ?");
+    return $stmt->execute([$id]);
+}
+
+
+
 function handleReservasiAction($db, $aksi, $id) {
     switch ($aksi) {
         case 'konfirmasi':

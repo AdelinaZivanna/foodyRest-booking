@@ -46,6 +46,13 @@
         </a>
     </li>
 
+    <li class="nav-item <?php if ($page == 'metode_pembayaran.php') echo 'active'; ?>">
+        <a class="nav-link" href="metode_pembayaran.php">
+            <i class="fas fa-money-bill"></i>
+            <span>Metode Pembayaran</span>
+        </a>
+    </li>
+
     <!-- Users -->
     <li class="nav-item <?php if ($page == 'users.php') echo 'active'; ?>">
         <a class="nav-link" href="users.php">
