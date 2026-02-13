@@ -105,7 +105,7 @@ http://localhost/foodyRest/register.php [Register]
 
 - PHP Native
 - MySQL
-- Bootstrap 4
+- Bootstrap 5 (Template SBAdmin)
 - PDO (Database Connection)
 
 ---
