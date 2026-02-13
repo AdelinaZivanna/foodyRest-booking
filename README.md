@@ -32,6 +32,7 @@ FoodyRest adalah aplikasi berbasis web untuk reservasi meja restoran dan pemesan
 Database: `restoran_booking`
 
 Tabel utama:
+- cart
 - users
 - meja
 - menu
