@@ -89,7 +89,7 @@ git clone https://github.com/AdelinaZivanna/foodyRest-booking.git
 
 2. Import database:
 - Buka phpMyAdmin
-- Import file `database/restoran_booking.sql`
+- Import file `restoran_booking.sql`
 
 3. Konfigurasi koneksi database di:
 inc/functions/config.php
