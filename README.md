@@ -17,8 +17,8 @@ FoodyRest adalah aplikasi berbasis web untuk reservasi meja restoran dan pemesan
 
 ### 🛠 Admin
 - Login Admin
-    [email: foodyAdmin@gmail.com]
-    [password: foodyRest01]
+- [email: foodyAdmin@gmail.com]
+- [password: foodyRest01]
 - Kelola meja (Tambah, Edit, Hapus)
 - Kelola menu
 - Kelola metode pembayaran
@@ -121,4 +121,5 @@ Project: Tugas Akhir PKL
 ## 📌 Catatan
 
 Project ini dibuat untuk tujuan pembelajaran dan pengembangan sistem reservasi restoran berbasis web.
+
 
